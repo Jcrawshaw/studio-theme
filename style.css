@@ -1,0 +1,19 @@
+/*
+Theme Name: Bootstrap Theme
+Theme URI: https://github.com/Jcrawshaw/bootstrap-theme
+Author: Jenny Crawshaw
+Author URI: http://jcrawshaw.github.io/
+Description: A WordPress theme built on the Bootstrap foundation
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bootstrap-theme
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
