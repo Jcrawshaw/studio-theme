@@ -47,16 +47,17 @@
 
       <div class="col-sm-3 portfolio-piece">
 
-        <?php
-         $thumbnail_id = get_post_thumbnail_id();
-         $thumbnail_url = wp_get_attachment_imgage_src( '$thumbnail_id', 'thumbnail-size', true );
-        ?>
-
-
-        <p><?php the_post_thumbnail( 'medium' ); ?></p>
-        <h3><?php the_title(); ?></h3>
+        <p><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a></p>
+        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 
       </div>
+
+      <?php $portfolio_count = $the_query->current_post + 1; ?>
+      <?php if ( $portfolio_count % 4 == 0): ?>
+
+        </div><div class="row">
+
+      <?php endif; ?>
 
       <?php endwhile; endif; ?>
 
