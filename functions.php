@@ -26,6 +26,7 @@ add_action( 'wp_enqueue_scripts', 'theme_js');
 //add_filter( 'show_admin_bar', '__return_false' );
 
 add_theme_support( 'menus' );
+add_theme_support( 'post-thumbnails' );
 
 function register_theme_menus() {
   register_nav_menus(
@@ -55,6 +56,7 @@ create_widget( 'Front Page Right', 'front-right', 'Displays on the right side of
 
 create_widget( 'Page Sidebar', 'page', 'Displays on pages with a sidebar');
 
+create_widget( 'Blog Sidebar', 'blog', 'Displays on the blog listing page');
 
 
 ?>
