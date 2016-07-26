@@ -47,7 +47,7 @@
 
       <div class="col-sm-3 portfolio-piece">
 
-        <p><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a></p>
+
         <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 
       </div>

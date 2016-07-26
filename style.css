@@ -84,6 +84,7 @@ article.post {
   margin: 20px 0 40px;
 }
 
+.featured-image img,
 .portfolio-piece img,
 .portfolio-image img {
   max-width: 100%;
