@@ -1,6 +1,32 @@
 <?php
 
+function wpt_register_theme_customizer( $wp_customize ) {
 
+  //var_dump( $wp_customize );
+
+  // Customize title and tagline sections and labels
+  $wp_customize->get_section('title_tagline')->title = __('Site Name and Description', 'wptthemecustomizer');
+  $wp_customize->get_control('blogname')->label = __('Site Name', 'wptthemecustomizer');
+  $wp_customize->get_control('blogdescription')->label = __('Site Description', 'wptthemecustomizer');
+
+
+  // Customize Background Settings
+  $wp_customize->get_section('background_image')->title = __('Background Styles', 'wptthemecustomizer');
+  $wp_customize->get_control('background_color')->section = 'background_image';
+
+}
+add_action( 'customize_register', 'wpt_register_theme_customizer' );
+
+
+//Add theme support for Custom Backgrounds
+$defaults = array(
+  'default-color' => '#efefef',
+  'default-image' => get_template_directory_uri() . '/images/background2.png',
+  );
+add_theme_support( 'custom-background', $defaults );
+
+
+//Enqueue Theme styles
 function theme_styles() {
 
   wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() .'/css/bootstrap.min.css' );
