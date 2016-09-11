@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-9">
+      <div class="col-md-8 main-content">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -48,5 +48,6 @@
       <?php get_sidebar( 'blog' ); ?>
 
     </div>
+
 
 <?php get_footer(); ?>

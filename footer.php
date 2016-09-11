@@ -1,7 +1,12 @@
  <hr>
 
       <footer>
-        <p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
+        <p>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/Shortgirlstudio"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </p>
+        <p><?php bloginfo('name'); ?> &copy; <?php echo date('Y'); ?> | Designed and Developed by<a href="http://jcrawshaw.github.io/">Jenny Crawshaw</a></p>
       </footer>
     </div> <!-- /container -->
 

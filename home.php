@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-9">
+      <div class="col-md-8 main-content">
 
         <div class="page-header">
           <h1><?php wp_title(''); ?></h1>
@@ -75,8 +75,16 @@
               <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
             </em></p>
 
-            <?php the_excerpt(); ?>
+            <div class="row">
 
+            <div class="col-md-3">
+              <?php the_post_thumbnail( 'thumbnail' ); ?>
+            </div>
+            <div class="col-md-9">
+              <?php the_excerpt(); ?>
+            </div>
+
+            </div>
             <hr>
 
           </article>
